@@ -1,0 +1,72 @@
+.coffee_wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.type1.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.type1, .type2, .type3, .type4{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 20px;
+    /* height: 100px; */
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    border-radius: 25px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+}
+.type1{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.type1 p, .type2 p, .type4 p ,.type3 p {
+    display: none;
+}
+.type1:hover.type1 p  {
+    display: block;
+}
+.type2:hover.type2 p  {
+    display: block;
+}
+.type3:hover.type3 p  {
+    display: block;
+}
+.type4:hover.type4 p  {
+    display: block;
+}
+.type2{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.type3{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.type4{
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width : 769px){
+    .coffee_wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

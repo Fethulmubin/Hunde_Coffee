@@ -1,0 +1,218 @@
+
+.banner_wrapper > img{
+    height: 1200px;
+    width: 100vw;
+}
+.banner_wrapper{
+    background-color: black;
+    position: relative;
+    /* margin-top: -; */
+}
+.banner_container{
+ position: absolute;
+ top: 0;
+ width: 100%;
+ /* left: 0; */
+}
+.banner{
+/* background: rgb(253,253,253);
+background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1) 83%, rgba(141, 86, 53, 1) 100%); */
+/* background-image: url(../../assets/upBanner.png); */
+}
+.logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    /* margin-top: 20px */
+
+}
+.logo img{
+    margin-bottom: -40px;
+    width: 580px;
+}
+.data{
+/* background: rgb(253,253,253);
+background: linear-gradient(180deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1) 83%, rgba(141, 86, 53, 1) 100%); */
+    height: 100vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+ .mid{
+    position: relative;
+    margin-top: 50px;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+ }
+.image img{
+    height: 200px;
+    align-self: center;
+    border-radius: 20px;
+    opacity: 0.8;
+    border: none;
+}
+.pop_left{
+    position: relative;
+    width: 30%;
+    /* margin-right: -100px; */
+}
+.madrasas{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 35%;
+    color: white;
+    font-size: 20px;
+    height: 35%;
+    width: 60%;
+    border-radius: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/bunna_banner4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+    padding-top: 10%;
+}
+.teachers{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* top: 230px; */
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 20px;
+    padding-top: 10%;
+    height: 35%;
+    width: 60%;
+    border-radius: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/buna_bunner3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+    /* background-color: #FFFFFF1A; */
+}
+.graduates{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 20%;
+    color: white;
+    font-size: 20px;
+    height: 25%;
+    width: 60%;
+    padding-top: 10%;
+    border-radius: 10px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/graduate.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+}
+.graduates_mobile{
+    display: none;
+}
+.pop_right{
+    position: relative;
+    width: 30%;
+}
+.years{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    right: 35%;
+    color: white;
+    font-size: 20px;
+    padding-top: 10%;
+    height: 35%;
+    width: 60%;
+    border-radius: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/buna_bunner2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.students{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    right: 10%;
+    color: white;
+    font-size: 20px;
+    height: 35%;
+    width: 60%;
+    padding-top: 10%;
+    border-radius: 30px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/buna_bunner1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+}
+
+.middle{
+    padding-left: 30px;
+  
+}
+@media (max-width : 769px){
+     .pop_left, .pop_right{
+        width: 50%;
+    }  
+    .logo img{
+        width: 350px;
+        margin-bottom: 10px;
+    }
+    .logo{
+        font-size: 12px;
+    }
+    .mid {
+        display: none;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+    }
+    /* .graduates_mobile{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 70%;
+        color: white;
+        font-size: 20px;
+        height: 25%;
+        width: 60%;
+        padding-top: 10%;
+        border-radius: 10px;
+        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/graduate.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
+
+    } */
+    }
+

@@ -1,0 +1,40 @@
+import React from 'react'
+import classes from './Coffee_dis.module.css'
+import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
+
+function Coffee() {
+  const [t, i18n] = useTranslation("global")
+  return (
+    <div className={classes.coffee_wrapper}>
+        
+        <Link to={`/coffee/type1`}>
+        {/* <div className={classes.type1.wrapper}> */}
+        <div className={classes.type1} >
+            <p>Readmore...</p>
+        </div>
+        <p style={{textAlign:'center', fontSize:'30px'}} >{t("home.coffee_types.type1")} </p>
+        </Link>
+        <Link to={`/coffee/type2`} >
+        <div className={classes.type2} >
+            <p>Readmore...</p>
+        </div>
+        <p style={{textAlign:'center', fontSize:'30px'}} >{t("home.coffee_types.type2")} </p>
+        </Link>
+        <Link to={`/coffee/type3`} >
+        <div className={classes.type3} >
+            <p>Readmore...</p>
+        </div>
+        <p style={{textAlign:'center', fontSize:'30px'}} >{t("home.coffee_types.type3")} </p>
+        </Link>
+        <Link to={`/coffee/type4`} >
+        <div className={classes.type4} >
+            <p>Readmore...</p>
+        </div>
+        <p style={{textAlign:'center', fontSize:'30px'}} >{t("home.coffee_types.type4")} </p>
+        </Link>
+    </div>
+  )
+}
+
+export default Coffee

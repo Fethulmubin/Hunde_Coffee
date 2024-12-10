@@ -1,0 +1,65 @@
+
+{
+    "home":{
+        "header":"من أرضنا إلى كأسكم",
+        "about":{
+            "title":"هوند تصدير القهوة",
+            "pargraph1":" هوند تصدير القهوة هي الشركة التي تم تأسيسها في 19 مايو 2022 ومقرها في أديس أبابا بإثيوبيا بهدف تصدير حبوب البن العربي الأخضر وتعمل برأس مال مسجل قدره 1,000,000 ETB من استثمار المالك. وقد تم العمل على استيراد المواد الخام الصناعية من خلال شركة شقيقة توسيع أعمالها للتصدير لتوليد العملة الأجنبية التي تدعم نشاط الاستيراد.",
+            "pargraph2":""
+        },
+        "coffee_types":{
+            "nature":{
+                "washed":"مغسول",
+                "Unwashed":"غير مغسول",
+                "special":"تخصص"
+            },
+            "Washed":{
+                "Sidamo Grade 2" : "سيدامو الدرجة 2",
+                "Limu Grade 2" : "ليمو الدرجة 2",
+                "Tepi Grade 2" : "تيبي الدرجة 2",
+                "Lekemti Grade 2" : "لقمت الدرجة 2",
+                "Bebeka Grade 2" : "ببكا الدرجة 2",
+                "Yirgacheffe Grade 2" : " يرجاتشفي الدرجة 2",
+                "Guji Grade 2" : "جوجي الدرجة 2"
+            },
+            "UnWashed":{
+                "Harar grade 4" : "هرر الدرجة-4",
+                "Djimma Gr4 & 5" : "جيما درجة-4 و درجة -5",
+                "Yirgacheffe Gr3 & 4" : " يرجاتشفي درجة-3 و درجة-4",
+                "Lekemti Gr4 & 5" : "لقمت درجة-4 و درجة-5 ",
+                "Sidamo Gr3 & 4" : "سيدامو درجة-3 و درجة-4",
+                "Guji Gr3 & 4" : "جوجي درجة-3 و درجة-4"
+            },
+            "Special":{
+                "Guji washed and unwashed specialty" : "تخصص جوجي مغسول وغير مغسول",
+                "Yirgacheffe specialty" : "تخصص يرجاتشيف",
+                "Sidamo specialty" : "تخصص سيدامو",
+                "Limu" : "ليمو"
+              
+            }
+
+        }
+    },
+    "coffee_c":{
+        "type1":{
+            "title":"",
+            "pargraph1":"",
+            "pargraph2":""
+        },
+        "type2":{
+            "title":"",
+            "pargraph1":"",
+            "pargraph2":""
+        },
+        "type3":{
+            "title":"",
+            "pargraph1":"",
+            "pargraph2":""
+        },
+        "type4":{
+            "title":"",
+            "pargraph1":"",
+            "pargraph2":""
+        }
+    }
+}

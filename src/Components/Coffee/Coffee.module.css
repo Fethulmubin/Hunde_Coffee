@@ -1,0 +1,162 @@
+.drop_coffee_wrapper{
+    /* margin: auto; */
+    margin: 20px;
+    display: flex;
+    height: 500px;
+    background-image:url(../../assets/pattern_L.png);
+    /* background:linear-gradient( #5B5E58,rgba(0, 0, 0, 0)), url(../../assets/pattern_L.png); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.coffee_lists_none{
+    opacity: 0;
+    display: none;
+    transition: opacity 2s;
+}
+.coffee_lists_block{
+    display: block;
+    /* margin-left: 50px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+    opacity: 1;
+    width: 90%;
+}
+.drop_title {
+    display: flex;
+    background-color: #A6673B;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    border-radius: 25px;
+    /* margin-bottom: -10px; */
+}
+.drop_title:hover{
+    /* background-color: #EFEFEF; */
+    background-color: #a6683bd3;
+    /* opacity: 0.6; */
+}
+.type1, .type2, .type3, .type4 {
+    display: flex;
+    background-color: #A6673B;
+    width: 180px;
+    height: 35px;
+    margin-bottom: 2px;
+    /* margin-left: -40px; */
+    /* margin-left: -150px; */
+    align-items: center;
+    /* margin-right: 25px; */
+    border-left: 5px solid black;
+}
+.type1:hover, .type2:hover, .type3:hover, .type4:hover{
+    /* background-color: #EFEFEF; */
+    background-color: #a6683bd3;
+    /* opacity: 0.6; */
+    /* border-radius: 25px; */
+}
+.prices, .contact{
+    display: flex;
+    background-color: #A6673B;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2px;
+    align-items: center;
+    border-radius: 25px;
+}
+.prices:hover, .contact:hover{
+    background-color: #EFEFEF;
+    opacity: 0.6;
+}
+.coffeeT{
+    width: 60%;
+    /* background-color: #DC8D4E; */
+}
+.dropDiv{
+    width: 30%;
+    /* background-color: #DC8D4E; */
+    border-right: 5px solid #C59B7E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    gap: 10px;
+}
+.banner {
+    position: relative;
+    background-image: url('../../assets/roasting.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .title {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 20px; 
+  }
+  
+  .title::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: orange;
+    bottom: -15px; 
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .breadcrumb {
+    color: white;
+    margin-top: 25px; 
+    font-size: 18px;
+  }
+  
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    color: orange; 
+  }
+  
+  .breadcrumb span {
+    color: orange; 
+    margin-left: 5px; 
+  }
+  @media (max-width:769px){
+    .type1, .type2, .type3, .type4 {
+        display: flex;
+        background-color: #A6673B;
+        width: 100px;
+        /* height: 35px; */
+        margin-bottom: 2px;
+        /* margin-left: -40px; */
+        /* margin-left: -150px; */
+        align-items: center;
+        /* margin-right: 25px; */
+        border-left: 5px solid black;
+    }
+  }
+  
