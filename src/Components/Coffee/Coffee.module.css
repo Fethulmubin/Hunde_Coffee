@@ -2,7 +2,7 @@
     /* margin: auto; */
     margin: 20px;
     display: flex;
-    height: 500px;
+    /* height: 500px; */
     background-image:url(../../assets/pattern_L.png);
     /* background:linear-gradient( #5B5E58,rgba(0, 0, 0, 0)), url(../../assets/pattern_L.png); */
     background-repeat: no-repeat;
@@ -55,20 +55,6 @@
     background-color: #a6683bd3;
     /* opacity: 0.6; */
     /* border-radius: 25px; */
-}
-.prices, .contact{
-    display: flex;
-    background-color: #A6673B;
-    color: white;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 2px;
-    align-items: center;
-    border-radius: 25px;
-}
-.prices:hover, .contact:hover{
-    background-color: #EFEFEF;
-    opacity: 0.6;
 }
 .coffeeT{
     width: 60%;
@@ -159,4 +145,31 @@
         border-left: 5px solid black;
     }
   }
+
+  .coffeeT h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .coffeeT p {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+  }
   
+.CoffeeDesc{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: justify;
+  
+  }
+  @media (max-width : 769px){
+    .CoffeeDesc{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+    .coffeeT{
+      margin-left: 10px;
+    }
+}

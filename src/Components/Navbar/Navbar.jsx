@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Menuitems } from "./Menuitems";
 import "./Navbar.css";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo_last.png'
 import logo_1 from '../../assets/logo_only.png'
 import { Link } from 'react-router-dom';
 import { changeLanguage } from "i18next";

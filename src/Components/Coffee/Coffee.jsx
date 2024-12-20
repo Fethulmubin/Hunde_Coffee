@@ -5,26 +5,17 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-// import {useTranslation} from 'react-i18next'
-import BannerComponent from '../../Pages/Contact/BannerComponent/BannerComponent'
+import Gallary from '../Gallary/Gallary'
 
 
 function Coffee() {
     const [t, i18n] = useTranslation("global")
-    const [isOpen_1, setIsOpen_1] = useState(false)
+    const [isOpen_1, setIsOpen_1] = useState(true)
     const [isOpen_2, setIsOpen_2] = useState(false)
     var {name} = useParams();
     const navigate = useNavigate();
     const [isOpen_3, setIsOpen_3] = useState(false);
-    
-    // const [selectedOption, setSelectedOption] = useState("Select an option");
   
-    // const toggleDropdown = () => setIsOpen(!isOpen);
-  
-    // const handleOptionClick = () => {
-    //   // setSelectedOption(opti);
-    //   setIsOpen(false);
-    // };
   
     const options_1 = [t("home.coffee_types.Washed.Sidamo Grade 2"),
             t("home.coffee_types.Washed.Yirgacheffe Grade 2"),
@@ -60,10 +51,10 @@ function Coffee() {
         </p>
       </div>
     </div>
-    {/* <div style={{height: "800px", width: "100%"}}></div> */}
-        <div className={classes.drop_coffee_wrapper}>
+  
+     <div className={classes.drop_coffee_wrapper}>
                 {/* drop down coffees */}
-                <div style={{ position: "relative", width: "200px" }}>
+                <div style={{ position: "relative", width: "200px", marginTop:"50px" }}>
       <button
         onClick={()=> setIsOpen_1(!isOpen_1)}
         style={{
@@ -184,17 +175,47 @@ function Coffee() {
     </div>
             <div className={classes.coffeeT}>
                 <div>
-                    <h1>{t(`home.coffee_types.${name}`)}</h1>
+                    <h1>our coffee beans</h1>
                 </div>
                 <div>
-                    <img src="" alt="" />
+                    <Gallary/>
+                </div>
+                <div className={classes.CoffeeDesc}>
+
+                <div>
+                  <h1 >yirga chefie coffee</h1>
+                    <p >
+Internationally Known and recognized as Yirgachaffee Brand Name.
+Grown coffee and has intense flavor known as flora. Has fine acidity
+and rich body. Many rosters are attracted to its fine and flavor and are
+willing to pay a premium price for it.</p>
                 </div>
                 <div>
-                    <p></p>
+                  <h1 >limmu coffee</h1>
+                    <p >
+Spicy and Winy flavor and attracts many roasters specially Europe and
+USA, has good acidity and body, washed Limmu is one of premium
+coffee, medium sized bean and greenish- bluish in color mostly round
+in shape.</p>
                 </div>
                 <div>
-                    <p></p>
+                  <h1 >Djimmah Coffee</h1>
+                    <p >
+Altitude heavy bodied cup with winy after test can be prepared as
+washed and sun dried.</p>
                 </div>
+                <div>
+                  <h1 >Lekemti Origin</h1>
+                    <p >
+                    Medium-to-bold bean known for its fruity taste, has greenish-brownish
+in color with good acidity and body, there are many roasters who put
+its flavor in their blends, but it can also sold as an original gourmet or
+special original flavor.</p>
+                </div>
+
+
+                </div>
+                
             </div>
         </div>
         <Footer/>
@@ -206,64 +227,5 @@ function Coffee() {
 export default Coffee
 
 
-// import React, { useState } from 'react';
 
-// function Coffee() {
-//   const [isOpen, setIsOpen] = useState(false);
-//   const [selectedOption, setSelectedOption] = useState("Select an option");
 
-//   const toggleDropdown = () => setIsOpen(!isOpen);
-
-//   const handleOptionClick = () => {
-//     // setSelectedOption(opti);
-//     setIsOpen(false);
-//   };
-
-//   const options = ["Option 1", "Option 2", "Option 3"];
-
-//   return (
-//     <div style={{ position: "relative", width: "200px" }}>
-//       <button
-//         onClick={toggleDropdown}
-//         style={{
-//           width: "100%",
-//           padding: "10px",
-//           cursor: "pointer",
-//           textAlign: "left",
-//         }}
-//       >
-//         {selectedOption}
-//       </button>
-//       {isOpen && (
-//         <ul
-//           style={{
-//             listStyleType: "none",
-//             margin: 0,
-//             padding: 0,
-//             border: "1px solid #ccc",
-//             position: "absolute",
-//             width: "100%",
-//             backgroundColor: "white",
-//             zIndex: 1000,
-//           }}
-//         >
-//           {options.map((option, index) => (
-//             <li
-//               key={index}
-//               onClick={() => handleOptionClick()}
-//               style={{
-//                 padding: "10px",
-//                 cursor: "pointer",
-//                 borderBottom: "1px solid #ccc",
-//               }}
-//             >
-//               {option}
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// }
-
-// export default Coffee;

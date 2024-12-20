@@ -3,16 +3,15 @@ import React, { useRef, useEffect, useState } from 'react';
 import {useLocation} from 'react-router-dom'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo_last.png';
 import Banne from '../../assets/Banner.png'
-import lawh from '../../assets/lawh.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import CountUp from 'react-countup'
 import Scroll from 'react-scroll-trigger';
 import classes from './Banner.module.css';
-// import {useTranslation} from 'react-i18next'
 import {useTranslation} from 'react-i18next'
+import CarouselEffect from '../Carousel/CarouselEffect';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,7 +28,7 @@ function Banner() {
 
     const animation_2 = gsap.fromTo(
         law.current,
-        { opacity : 0 }, // Starting font size
+        { opacity : 0 }, 
         {
           opacity: 0.5,
           duration: 2,
@@ -38,14 +37,12 @@ function Banner() {
             start: 'top 60%',
             end: 'bottom 20%',
             scrub: true,
-            // Optional: markers for debugging
             
           },
         }
       );
      
     return () => {
-      // Clean up ScrollTrigger on unmount
       animation_2.kill();
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
@@ -60,12 +57,15 @@ function Banner() {
    
   
   return (
+    <div> 
+      <CarouselEffect/>
     <div className={classes.banner_wrapper}>
       <img src={Banne} alt="" />
+      {/* <CarouselEffect/> */}
     <section className={classes.banner_container}>
     <div className={classes.banner}>
       <div className={classes.logo}>
-        <img style={{objectFit:'contain'}} src={logo} alt="Logo" />
+        {/* <img style={{objectFit:'contain'}} src={logo} alt="Logo" /> */}
         <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <h1 style={{ fontWeight:'900', fontFamily:'monospace'}} ref={name}>{t("home.header")} </h1>
         </Scroll>
@@ -75,35 +75,35 @@ function Banner() {
        <div className={classes.pop_left} >
           <div className={classes.madrasas} data-aos="fade-right">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={200} duration={5} delay={0}/>}
-            <p>በላይ መድረሳዎች</p>
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={10} duration={5} delay={0}/>}
+            <p>10+ Employees</p>
             </Scroll>
           </div>
           
           <div className={classes.teachers} data-aos="fade-right" >
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             {counterOn && <CountUp className={classes.middle} start={0} end={150} duration={5} delay={0}/> }
-            <p>በላይ መምህራን</p>
+            <p>Special beans</p>
             </Scroll>
           </div>
           <div className={classes.graduates_mobile} data-aos="zoom-in">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
-            <p >በላይ ምሩቃን</p>
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={10} duration={5} delay={0}/>}
+            <p >variety choices</p>
             </Scroll>
           </div>
         </div>
       <div className={classes.pop_right}>
           <div className={classes.years} data-aos="fade-left">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={15} duration={5} delay={0}/>}
-            <p>አመታት ያስቆጠረ</p>
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={1000000} duration={2} delay={0}/>}
+            <p>1M+ capital</p>
             </Scroll>
           </div>
           <div className={classes.students} data-aos="fade-left">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
             {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
-            <p>በላይ ተማሪዎች</p>
+            <p>Leading quality</p>
             </Scroll> 
           </div>
           <div>
@@ -113,6 +113,7 @@ function Banner() {
 
     </div>
     </section>
+    </div>
     </div>
   );
 }

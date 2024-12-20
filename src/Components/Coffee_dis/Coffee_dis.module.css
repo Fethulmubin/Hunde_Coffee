@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    /* position: relative; */
 }
 a {
     list-style: none;
@@ -24,13 +25,13 @@ a {
     /* height: 100px; */
     width: 200px;
     height: 200px;
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/jima.jpg');
     border-radius: 25px;
     margin-bottom: 20px;
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
 }
 .type1{
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/jima.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -50,17 +51,17 @@ a {
     display: block;
 }
 .type2{
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/Limu.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .type3{
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/yrga.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 .type4{
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/teacher_student2.jpg');
+    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/Lekemt.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -68,5 +69,10 @@ a {
     .coffee_wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 120px;
+    }
+    .type1, .type2, .type3, .type4{
+        width: 150px;
+        height: 150px;
     }
 }

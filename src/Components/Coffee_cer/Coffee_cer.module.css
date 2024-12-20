@@ -44,4 +44,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .serve, .boil, .mort, .roasting{
+        width: 150px;
+        height: 150px;
+    }
 }

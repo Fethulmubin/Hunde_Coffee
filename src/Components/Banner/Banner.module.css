@@ -1,23 +1,20 @@
 
 .banner_wrapper > img{
-    height: 1200px;
+    height: 950px;
     width: 100vw;
+ 
 }
+
 .banner_wrapper{
-    background-color: black;
+    background-color: #140906;
     position: relative;
-    /* margin-top: -; */
+   
 }
 .banner_container{
  position: absolute;
  top: 0;
  width: 100%;
- /* left: 0; */
-}
-.banner{
-/* background: rgb(253,253,253);
-background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1) 83%, rgba(141, 86, 53, 1) 100%); */
-/* background-image: url(../../assets/upBanner.png); */
+ margin-top: 10%;
 }
 .logo{
     display: flex;
@@ -26,7 +23,6 @@ background: linear-gradient(0deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1) 8
     position: relative;
     color: white;
     font-size: 2rem;
-    /* margin-top: 20px */
 
 }
 .logo img{
@@ -63,7 +59,7 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1)
 }
 .pop_left{
     position: relative;
-    width: 30%;
+    width: 40%;
     /* margin-right: -100px; */
 }
 .madrasas{
@@ -130,7 +126,7 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1)
 }
 .pop_right{
     position: relative;
-    width: 30%;
+    width: 40%;
 }
 .years{
     position: absolute;
@@ -184,6 +180,15 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1)
         width: 350px;
         margin-bottom: 10px;
     }
+    .madrasas, .teachers,.graduates,.years,.students{
+        height: 18%;
+        width: 60%;
+    } 
+    .banner_wrapper > img{
+        height: 600px;
+        width: 100vw;
+     
+    }
     .logo{
         font-size: 12px;
     }
@@ -194,25 +199,5 @@ background: linear-gradient(180deg, rgba(253,253,253,1) 0%, rgba(141, 86, 53, 1)
         margin-right: auto;
         align-items: center;
     }
-    /* .graduates_mobile{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 50%;
-        left: 70%;
-        color: white;
-        font-size: 20px;
-        height: 25%;
-        width: 60%;
-        padding-top: 10%;
-        border-radius: 10px;
-        background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/graduate.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.63);
-
-    } */
     }
 

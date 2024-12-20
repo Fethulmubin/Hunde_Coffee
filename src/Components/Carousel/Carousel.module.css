@@ -1,0 +1,30 @@
+.hero_img {
+  position: relative;
+}
+
+.hero_img::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 225, 225, 0),
+    Irgba(255, 255, 255)
+  );
+}
+.hero_img{
+  height: 550px;
+}
+.hero_img img{
+  height: 550px;
+  /* object-fit :none; */
+  overflow: hidden;
+  /* object-fit :none; */
+}
+@media (max-width : 769px){
+  .hero_img img{
+    height: 300px;
+    object-fit: cover;
+  }
+}
