@@ -1,3 +1,45 @@
+import { useTranslation } from "react-i18next"
+
+
+
+ export function Api(){
+    const [t] = useTranslation("global")
+    let options;
+
+    return  options = [
+        {
+            id : 1,
+            name: t("home.coffee_types.nature.washed"),
+            option: [t("home.coffee_types.Washed.Sidamo Grade 2"),
+                t("home.coffee_types.Washed.Yirgacheffe Grade 2"),
+                    t("home.coffee_types.Washed.Bebeka Grade 2"),
+                        t("home.coffee_types.Washed.Lekemti Grade 2"),
+                            t("home.coffee_types.Washed.Tepi Grade 2"),
+                                t("home.coffee_types.Washed.Limu Grade 2"),
+                                t("home.coffee_types.Washed.Guji Grade 2")],
+        },
+        {
+            id: 2,
+            name: t("home.coffee_types.nature.Unwashed"),
+            option: [t("home.coffee_types.UnWashed.Guji Gr3 & 4"),
+                t("home.coffee_types.UnWashed.Sidamo Gr3 & 4"),
+                    t("home.coffee_types.UnWashed.Lekemti Gr4 & 5"),
+                        t("home.coffee_types.UnWashed.Yirgacheffe Gr3 & 4"),
+                            t("home.coffee_types.UnWashed.Djimma Gr4 & 5"),
+                                t("home.coffee_types.UnWashed.Harar grade 4"),],
+        },
+        {
+            id: 3,
+            name: t("home.coffee_types.nature.special"),
+            option: [t("home.coffee_types.Special.Limu"),
+                t("home.coffee_types.Special.Sidamo specialty"),
+                    t("home.coffee_types.Special.Yirgacheffe specialty"),
+                        t("home.coffee_types.Special.Guji washed and unwashed specialty")]
+        }
+    ]
+
+}
+
 export const coffeeItems = [
     {
         id: 1,
@@ -48,3 +90,35 @@ export const moreChoice = [
         desc: " The company plans to export more than three thousand metric ton of green coffee beans for the 2023/24 fiscal year and its export volume is increasing since its time of establishment and working to expand its export to different parts of the world."
     }
 ]
+
+// export const options = [
+//     {
+//         id : 1,
+//         name: t("home.coffee_types.nature.washed"),
+//         options_1: [t("home.coffee_types.Washed.Sidamo Grade 2"),
+//             t("home.coffee_types.Washed.Yirgacheffe Grade 2"),
+//                 t("home.coffee_types.Washed.Bebeka Grade 2"),
+//                     t("home.coffee_types.Washed.Lekemti Grade 2"),
+//                         t("home.coffee_types.Washed.Tepi Grade 2"),
+//                             t("home.coffee_types.Washed.Limu Grade 2"),
+//                             t("home.coffee_types.Washed.Guji Grade 2")],
+//     },
+//     {
+//         id: 2,
+//         name: t("home.coffee_types.nature.Unwashed"),
+//         options_2: [t("home.coffee_types.UnWashed.Guji Gr3 & 4"),
+//             t("home.coffee_types.UnWashed.Sidamo Gr3 & 4"),
+//                 t("home.coffee_types.UnWashed.Lekemti Gr4 & 5"),
+//                     t("home.coffee_types.UnWashed.Yirgacheffe Gr3 & 4"),
+//                         t("home.coffee_types.UnWashed.Djimma Gr4 & 5"),
+//                             t("home.coffee_types.UnWashed.Harar grade 4"),],
+//     },
+//     {
+//         id: 3,
+//         name: t("home.coffee_types.nature.Special"),
+//         options_3: [t("home.coffee_types.Special.Limu"),
+//             t("home.coffee_types.Special.Sidamo specialty"),
+//                 t("home.coffee_types.Special.Yirgacheffe specialty"),
+//                     t("home.coffee_types.Special.Guji washed and unwashed specialty")]
+//     }
+// ]

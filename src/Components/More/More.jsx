@@ -3,11 +3,7 @@ import classes from "./More.module.css"
 import { moreChoice } from "../../Api/Api";
 
 function More() {
-  const [isOpen_4, setIsOpen_4] = useState(false);
-  const [isOpen_1, setIsOpen_1] = useState(true);
-  const [isOpen_2, setIsOpen_2] = useState(false);
-  const [isOpen_3, setIsOpen_3] = useState(false);
-  const [isOpen_5, setIsOpen_5] = useState(false);
+ 
   const [open, setOpen] = useState(null);
 
   const options = ["Option 1", "Option 2", "Option 3"];
@@ -22,7 +18,6 @@ function More() {
 
   return (
     <div className={classes.more_wrapper}
-    //  style={{ position: "relative" }}
      >
       {
         moreChoice.map((item,index)=> 
