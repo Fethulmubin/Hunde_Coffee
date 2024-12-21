@@ -26,5 +26,25 @@ export const moreChoice = [
         id: 1,
         name: "what is Our company's initiatvie vission ?",
         desc: "To become the leading Quality coffee exporting company that is always demanded by its customers"
+    },
+    {
+        id: 2,
+        name: "What is Our Company's main misssion ?",
+        desc: " Our mission is to ensure continuous supply of best quality coffee to the world market through implementing improved and modern coffee production practices and supply chain activities."
+    },
+    {
+        id: 3,
+        name: "Our Company's Core values",
+        desc: "Giving priority to quality, Continuous learning for improvements, Innovation Professionalism Social responsibility Team work High Respect to our customers"
+    },
+    {
+        id: 4,
+        name: "What are our supplly chain ?",
+        desc: "The main supply chain of the company is from the framer we plan to establishing coffee processing site and also works with different coffee producing farmers located at Oromia regional state Guji zone and Sidamo regional states by establishing vertical integration with the local producers that supply high quality specialty and conventional coffees."
+    },
+    {
+        id: 5,
+        name: "What is our Company's export plan for upcoming years",
+        desc: " The company plans to export more than three thousand metric ton of green coffee beans for the 2023/24 fiscal year and its export volume is increasing since its time of establishment and working to expand its export to different parts of the world."
     }
 ]
