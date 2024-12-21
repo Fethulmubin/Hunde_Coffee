@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Gallary from '../Gallary/Gallary'
+import { coffeeItems } from '../../Api/Api'
 
 
 function Coffee() {
@@ -181,39 +182,12 @@ function Coffee() {
                     <Gallary/>
                 </div>
                 <div className={classes.CoffeeDesc}>
-
-                <div>
-                  <h1 >yirga chefie coffee</h1>
-                    <p >
-Internationally Known and recognized as Yirgachaffee Brand Name.
-Grown coffee and has intense flavor known as flora. Has fine acidity
-and rich body. Many rosters are attracted to its fine and flavor and are
-willing to pay a premium price for it.</p>
-                </div>
-                <div>
-                  <h1 >limmu coffee</h1>
-                    <p >
-Spicy and Winy flavor and attracts many roasters specially Europe and
-USA, has good acidity and body, washed Limmu is one of premium
-coffee, medium sized bean and greenish- bluish in color mostly round
-in shape.</p>
-                </div>
-                <div>
-                  <h1 >Djimmah Coffee</h1>
-                    <p >
-Altitude heavy bodied cup with winy after test can be prepared as
-washed and sun dried.</p>
-                </div>
-                <div>
-                  <h1 >Lekemti Origin</h1>
-                    <p >
-                    Medium-to-bold bean known for its fruity taste, has greenish-brownish
-in color with good acidity and body, there are many roasters who put
-its flavor in their blends, but it can also sold as an original gourmet or
-special original flavor.</p>
-                </div>
-
-
+                  {coffeeItems.map(item=> 
+                    <div key={item.id}>
+                      <h1>{item.name}</h1>
+                      <p>{item.desc}</p>
+                    </div>
+                  )}
                 </div>
                 
             </div>
