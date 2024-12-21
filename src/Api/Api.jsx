@@ -24,6 +24,7 @@ export const coffeeItems = [
 export const moreChoice = [
     {
         id: 1,
-        
+        name: "what is Our company's initiatvie vission ?",
+        desc: "To become the leading Quality coffee exporting company that is always demanded by its customers"
     }
 ]
