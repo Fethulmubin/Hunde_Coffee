@@ -12,13 +12,23 @@ function More() {
 
   const options = ["Option 1", "Option 2", "Option 3"];
 
+  const handleOpenTogle = (id)=> {
+    if(id === open) {
+      setOpen(null);
+    }else {
+      setOpen(id);
+    }
+  }
+
   return (
     <div className={classes.more_wrapper}
-     style={{ position: "relative" }}>
+    //  style={{ position: "relative" }}
+     >
       {
         moreChoice.map((item,index)=> 
-        <div key={index}>
-          <h1 className={classes.btn} onClick={()=>setOpen(item.id)}>{item.name} <span>{open === item.id? "-": "+"}</span></h1>
+        <div key={index} className={classes.more_Each}>
+          <h1 className={classes.btn} onClick={()=>handleOpenTogle(item.id)}>{item.name} <span>{open === item.id? "-": "+"}</span></h1>
+          {open === item.id &&  <hr />}
           {open === item.id && <p>{item.desc}</p>}
         </div>
         )
