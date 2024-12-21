@@ -20,11 +20,11 @@ function Galary() {
     <div style={{
       backgroundImage: `url(${background[count].image})`,
     }} className={classes.outer__container}>
-        <div className={classes.content__wrapper}>
+        {/* <div className={classes.content__wrapper}> */}
           <button onClick={()=> count > 0 ? setCount(count - 1) : setCount(2)}><img src={left_arrow} alt="" /></button>
           <button onClick={()=> count < 2 ? setCount(count +1): setCount(0) }><img src={right_arrow} alt="" /></button>
           
-        </div>
+        {/* </div> */}
     </div>
   )
 }

@@ -14,11 +14,12 @@
   );
 }
 .hero_img{
-  height: 550px;
+  /* height: 550px; */
 }
 .hero_img img{
   height: 550px;
-  /* object-fit :none; */
+  /* height: 100%; */
+  /* object-fit :cover; */
   overflow: hidden;
   /* object-fit :none; */
 }

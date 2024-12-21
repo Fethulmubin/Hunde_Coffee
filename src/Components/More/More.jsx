@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import classes from "./More.module.css"
-import { moreChoice } from "../../Api/Api";
+import { Api } from "../../Api/Api";
 
 function More() {
  
   const [open, setOpen] = useState(null);
 
-  const options = ["Option 1", "Option 2", "Option 3"];
+  const options = Api();
 
   const handleOpenTogle = (id)=> {
     if(id === open) {
@@ -20,7 +20,7 @@ function More() {
     <div className={classes.more_wrapper}
      >
       {
-        moreChoice.map((item,index)=> 
+        options[2].map((item,index)=> 
         <div key={index} className={classes.more_Each}>
           <h1 className={classes.btn} onClick={()=>handleOpenTogle(item.id)}>{item.name} <span>{open === item.id? "-": "+"}</span></h1>
           {open === item.id &&  <hr />}

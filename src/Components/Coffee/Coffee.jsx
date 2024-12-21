@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Gallary from '../Gallary/Gallary'
-import { coffeeItems, Api } from '../../Api/Api'
+import {  Api } from '../../Api/Api'
 
 
 function Coffee() {
@@ -44,7 +44,7 @@ function Coffee() {
 
                   {
                     // console.log(Api.objects)
-                    options.map((item,index)=> 
+                    options[0].map((item,index)=> 
                     <div key={index} className={classes.options}>
                       <h1 className={classes.btn} onClick={()=>handleOpenTogle(item.id)}>{item.name} <span>{open === item.id? "-": "+"}</span></h1>
                      {
@@ -66,7 +66,7 @@ function Coffee() {
                     <Gallary/>
                 </div>
                 <div className={classes.CoffeeDesc}>
-                  {coffeeItems.map(item=> 
+                  {options[1].map(item=> 
                     <div key={item.id}>
                       <h1>{item.name}</h1>
                       <p>{item.desc}</p>
