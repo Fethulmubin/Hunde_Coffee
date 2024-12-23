@@ -1,6 +1,9 @@
 import React from 'react'
 import classes from "./Footer.module.css"
 import Logo from "../../assets/logo.png";
+import { FaTelegram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 // import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 // import InstagramIcon from "@mui/icons-material/Instagram";
 // import TelegramIcon from '@mui/icons-material/Telegram';
@@ -19,16 +22,16 @@ function Footer() {
 
           <div className={classes.icons}>
             <Link to="http://www.facebook.com/alimrancmc" target="_blank">
-              {/* <FacebookOutlinedIcon /> */}
+              <FaFacebook />
             </Link>
-            <Link to="www.instagram.com/alimrancmc" target="_blank">
-              {/* <InstagramIcon /> */}
+            <Link to="http://www.instagram.com/alimrancmc" target="_blank">
+              < FaTelegram/>
             </Link>
-            <Link to="www.youtube.com/@alimrancmc" target="_blank">
-              {/* <YouTubeIcon /> */}
-            </Link>
+            {/* <Link to="http://www.youtube.com/@alimrancmc" target="_blank">
+              
+            </Link> */}
             <Link to="https://t.me/Alimrancmc" target="_blank">
-              {/* <TelegramIcon /> */}
+              <FaInstagram />
             </Link>
           </div>
         </div>
@@ -47,7 +50,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link  to="/service" >
+              <Link  to="coffee/description" >
                 Our Coffee
               </Link>
             </li>

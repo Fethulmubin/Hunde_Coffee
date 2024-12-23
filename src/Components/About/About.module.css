@@ -15,6 +15,8 @@
     /* border-left: 5px solid #05A04B; Green border */
     border-radius: 10px; /* Rounded corners */
     border: 5px;
+    height: 400px;
+    object-fit:contain ;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.63);
     
 }
@@ -57,7 +59,14 @@
     margin-top: 15px;
 }
 .descriptionL p{
-    font-size: 18px;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+.descriptionL h1{
+    font-size: 25;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 @media (max-width : 769px){
   
@@ -68,8 +77,17 @@ flex-direction: column;
 /* justify-content: center; */
 
 }
+.blog_image{
+    height: 300px;
+}
 .descriptionL, .blog_image{
     height: 50%;
     width: 90%;
+}
+.descriptionL p{
+    font-size: 15px;
+}
+.descriptionL h1{
+    font-size: 20px;
 }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from'./About.module.css'
-import coffee from '../../assets/pic_about.jpg'
+import coffee from '../../assets/about_coffee.jpeg'
 import { Link } from 'react-router-dom'
 import AboutPage from '../../Pages/About/AboutPage'
 import { useTranslation } from 'react-i18next'
@@ -26,7 +26,7 @@ return (
                 </div>
                 <div className={classes.descriptionL}>
                     <h2>{t("home.about.title")}</h2>
-                    <p style={{ textAlign: 'justify' }}>{t("home.about.pargraph1")}</p>
+                    <p >{t("home.about.pargraph1")}</p>
                     {window.location.pathname == '/' &&
                      <Link to='/about' onClick={() => window.scrollTo(0, 0)}>
                      <button>More..</button>

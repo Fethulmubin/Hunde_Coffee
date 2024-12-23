@@ -6,13 +6,14 @@ import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
 import Gallary from '../Gallary/Gallary'
+
 import {  Api } from '../../Api/Api'
 
 
 function Coffee() {
     const [ open , setOpen]= useState(null);
     const options = Api();
-
+    const [t] = useTranslation("global")
     const handleOpenTogle = (id)=> {
       if(id === open) {
         setOpen(null);
@@ -60,7 +61,7 @@ function Coffee() {
             </div>
             <div className={classes.coffeeT}>
                 <div>
-                    <h1>our coffee beans</h1>
+                    <h1> {t("home.coffee_types.nature.Our Coffee beans")}</h1>
                 </div>
                 <div>
                     <Gallary/>

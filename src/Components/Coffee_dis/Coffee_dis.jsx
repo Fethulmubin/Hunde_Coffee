@@ -8,26 +8,26 @@ function Coffee() {
   return (
     <div className={classes.coffee_wrapper}>
         
-        <Link to={`/coffee/type1`}  onClick={() => window.scrollTo(0, 0)}>
+        <Link to={`coffee/description`}  onClick={() => window.scrollTo(0, 0)}>
         {/* <div className={classes.type1.wrapper}> */}
         <div className={classes.type1} >
             <p>Readmore...</p>
         </div>
         <p style={{textAlign:'center', fontSize:'30px'}} > yrgachefe coffee </p>
         </Link>
-        <Link to={`/coffee/type2`}  onClick={() => window.scrollTo(0, 0)}>
+        <Link to={`coffee/description`}  onClick={() => window.scrollTo(0, 0)}>
         <div className={classes.type2} >
             <p>Readmore...</p>
         </div>
         <p style={{textAlign:'center', fontSize:'30px'}} >Limu Coffee </p>
         </Link>
-        <Link to={`/coffee/type3`}  onClick={() => window.scrollTo(0, 0)} >
+        <Link to={`coffee/description`}  onClick={() => window.scrollTo(0, 0)} >
         <div className={classes.type3} >
             <p>Readmore...</p>
         </div>
         <p style={{textAlign:'center', fontSize:'30px'}} >Djimma Coffee </p>
         </Link>
-        <Link to={`/coffee/type4`}  onClick={() => window.scrollTo(0, 0)}>
+        <Link to={`coffee/description`}  onClick={() => window.scrollTo(0, 0)}>
         <div className={classes.type4} >
             <p>Readmore...</p>
         </div>

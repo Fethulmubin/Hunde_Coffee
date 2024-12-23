@@ -17,10 +17,17 @@
     overflow: hidden;
   }
   .logo_alimran{
-    background-color: #000;
+    /* background-color: black; */
     width: 100px;
+    /* height: 200px; */
+    background: transparent;
+    /* height: 80px; */
     border-radius: 200px;
   }
+  /* .logo_alimran img{
+    width: 200px;
+    height: 200px;
+  } */
   .logo_alimran:hover{
     background-color: #E5842E;
   }

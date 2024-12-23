@@ -12,7 +12,8 @@
            "nature":{
                 "washed":"Washed",
                 "Unwashed":"unWashed",
-                "special":"Special"
+                "special":"Special",
+                "Our Coffee beans":"Our Coffee beans"
             },
             "Washed":{
                 "Sidamo Grade 2" : "Sidamo Grade 2 ",
@@ -37,29 +38,48 @@
                 "Sidamo specialty" : "Sidamo specialty",
                 "Limu" :  "Limu"
               
+            },
+            "coffee_desc":{
+                "Yirgacheffe":{
+                    "name":"Yirga Chefie Coffee",
+                    "descr":"Internationally Known and recognized as Yirgachaffee Brand Name.Grown coffee and has intense flavor known as flora. Has fine acidity and rich body. May rosters are attracted to its fine and flavor and are willing to pay a premium price for it."
+                },
+                "Limu":{
+                    "name": "Limu Coffee",
+                    "descr": "Spicy and Winy flavor and attracts many roasters specially Europe and USA, has good acidity and body, washed Limmu is one of premium coffee, medium sized bean and greenish- bluish in color mostly round in shape."
+                },
+                "jima":{
+                    "name":"Djimmah Coffee",
+                    "descr": "Altitude heavy bodied cup with winy after test can be prepared as washed and sun dried."
+                },
+                "lekemt":{
+                    "name":"Lekemti Origin",
+                    "descr": " Medium-to-bold bean known for its fruity taste, has greenish-brownish in color with good acidity and body, there are many roasters who put its flavor in their blends, but it can also sold as an original gourmet or special original flavor."
+                }
             }
         }
     },
-    "coffee_c":{
-        "type1":{
-            "title":"",
-            "pargraph1":"",
-            "pargraph2":""
+    "questions":{
+        "q1":{
+            "Q":"what is Our company's initiatvie vission ?",
+            "A":"To become the leading Quality coffee exporting company that is always demanded by its customers"
+            
         },
-        "type2":{
-            "title":"",
-            "pargraph1":"",
-            "pargraph2":""
+        "q2":{
+            "Q":"What is Our Company's main misssion ?",
+            "A":" Our mission is to ensure continuous supply of best quality coffee to the world market through implementing improved and modern coffee production practices and supply chain activities."
         },
-        "type3":{
-            "title":"",
-            "pargraph1":"",
-            "pargraph2":""
+        "q3":{
+            "Q":"Our Company's Core values",
+            "A":"Giving priority to quality, Continuous learning for improvements, Innovation Professionalism Social responsibility Team work High Respect to our customers"
         },
-        "type4":{
-            "title":"",
-            "pargraph1":"",
-            "pargraph2":""
+        "q4":{
+            "Q":"What are our supplly chain ?",
+            "A":"The main supply chain of the company is from the framer we plan to establishing coffee processing site and also works with different coffee producing farmers located at Oromia regional state Guji zone and Sidamo regional states by establishing vertical integration with the local producers that supply high quality specialty and conventional coffees."
+        },
+        "q5":{
+            "Q":"What is our Company's export plan for upcoming years",
+            "A":"The company plans to export more than three thousand metric ton of green coffee beans for the 2023/24 fiscal year and its export volume is increasing since its time of establishment and working to expand its export to different parts of the world."
         }
     }
 }
