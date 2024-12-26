@@ -61,11 +61,9 @@ function Banner() {
       <CarouselEffect/>
     <div className={classes.banner_wrapper}>
       <img src={Banne} alt="" />
-      {/* <CarouselEffect/> */}
     <section className={classes.banner_container}>
     <div className={classes.banner}>
       <div className={classes.logo}>
-        {/* <img style={{objectFit:'contain'}} src={logo} alt="Logo" /> */}
         <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
         <h1 style={{ fontWeight:'900', fontFamily:'monospace'}} ref={name}>{t("home.header")} </h1>
         </Scroll>
@@ -75,20 +73,18 @@ function Banner() {
        <div className={classes.pop_left} >
           <div className={classes.madrasas} data-aos="fade-right">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={10} duration={5} delay={0}/>}
             <p>10+ Employees</p>
             </Scroll>
           </div>
           
           <div className={classes.teachers} data-aos="fade-right" >
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn && <CountUp className={classes.middle} start={0} end={150} duration={5} delay={0}/> }
             <p>Special beans</p>
             </Scroll>
           </div>
           <div className={classes.graduates_mobile} data-aos="zoom-in">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={10} duration={5} delay={0}/>}
+            {counterOn &&   <CountUp className={classes.middle} start={0} end={5} duration={5} delay={0}/>}
             <p >variety choices</p>
             </Scroll>
           </div>
@@ -102,7 +98,6 @@ function Banner() {
           </div>
           <div className={classes.students} data-aos="fade-left">
           <Scroll onEnter={()=>setCounterOn(true)} onExit={()=> setCounterOn(false)}>
-            {counterOn &&   <CountUp className={classes.middle} start={0} end={5000} duration={5} delay={0}/>}
             <p>Leading quality</p>
             </Scroll> 
           </div>

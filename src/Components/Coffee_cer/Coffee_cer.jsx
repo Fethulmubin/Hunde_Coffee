@@ -8,7 +8,7 @@ function Coffee_cer() {
   },[])
   return (
     <div>
-    <h1 style={{textAlign:'center', fontSize:'40px'}}>Our Coffee Ceremoney</h1>
+    <h1 style={{textAlign:'center'}} className={classes.cer_heading}>Our Coffee Ceremoney</h1>
     <div className={classes.cermoney_wrapper}>
            <div className={classes.roasting} data-aos="fade-right">
             <p>THE COFFEE ROASTING</p>

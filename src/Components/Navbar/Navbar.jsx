@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Menuitems } from "./Menuitems";
 import "./Navbar.css";
 import logo from '../../assets/logo_last.png'
-import logo_1 from '../../assets/logo_only.png'
 import { Link } from 'react-router-dom';
 import { changeLanguage } from "i18next";
 import { useTranslation } from "react-i18next";
-// import logo from "../assets/favicon-32x32.png";
 const Navbar = () => {
    const [clicked, setClicked] = useState(false);
    const [button, setButton] = useState('en');
@@ -24,7 +22,6 @@ const Navbar = () => {
       <div className="navbar-logo">
         <Link to = '/'>
         <img style={{objectFit:'contain'}} src={logo} alt="" />
-        {/* <p>HUNDE COFFEE EXPORT</p> */}
         </Link>
       </div>
       <div className="menu-icons" onClick={handleClick}>

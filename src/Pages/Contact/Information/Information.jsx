@@ -28,8 +28,8 @@ const Information = () => {
               <i className="fas fa-phone"></i>
               <span>Phone:</span>
             </div>
-            <p className={style.displayInfo}>+251</p>
-            <p className={style.displayInfo}>+251</p>
+            <p className={style.displayInfo}>+251984666353</p>
+            <p className={style.displayInfo}>+251911319603</p>
           </div>
         </div>
 
@@ -41,15 +41,15 @@ const Information = () => {
               <i className="fab fa-whatsapp"></i>
               <span>WhatsApp:</span>
             </div>
-            <p className={style.displayInfo}>+251</p>
-            <p className={style.displayInfo}>+251</p>
+            <p className={style.displayInfo}>+251984666353</p>
 
             {/* Email Section */}
             <div className={style.iconLabel}>
               <i className="fas fa-envelope"></i>
               <span>Email:</span>
             </div>
-            <p className={style.displayInfo}>Hunde@gmail.com</p>
+            <p className={style.displayInfo}>contact@hktcoffee-export.com</p>
+            <p className={style.displayInfo}>hunde@hktcoffee-export.com</p>
           </div>
         </div>
 

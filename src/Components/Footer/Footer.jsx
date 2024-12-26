@@ -4,11 +4,11 @@ import Logo from "../../assets/logo.png";
 import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
-// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import TelegramIcon from '@mui/icons-material/Telegram';
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { CiLocationOn } from "react-icons/ci";
+import { FaWhatsapp } from "react-icons/fa";
+import { CiPhone } from "react-icons/ci";
+import { MdEmail } from "react-icons/md";
+
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -21,17 +21,11 @@ function Footer() {
           </div>
 
           <div className={classes.icons}>
-            <Link to="http://www.facebook.com/alimrancmc" target="_blank">
-              <FaFacebook />
+            <Link to="http://www.facebook.com/alimrancm" target="_blank">
+              <FaWhatsapp />
             </Link>
-            <Link to="http://www.instagram.com/alimrancmc" target="_blank">
+            <Link to="t.me/" target="_blank">
               < FaTelegram/>
-            </Link>
-            {/* <Link to="http://www.youtube.com/@alimrancmc" target="_blank">
-              
-            </Link> */}
-            <Link to="https://t.me/Alimrancmc" target="_blank">
-              <FaInstagram />
             </Link>
           </div>
         </div>
@@ -64,12 +58,10 @@ function Footer() {
 
         <div className={classes.contact__container}>
           <h2>Address</h2>
-          <p>Hunde@gmail.com</p>
-          <p>+1-202-386-2702</p>
-          <div className={classes.location}>
-            {/* <LocationOnIcon/> */}
-            <p>Ethiopia, Addis Ababa, </p>
-          </div>
+          <p><span><MdEmail className={classes.ico}/></span>hunde@hktcoffee-export.com</p>
+          <p><span><CiPhone className={classes.ico}/></span>+251911319603</p>            
+          <p><span><CiLocationOn className={classes.ico}/></span>Ethiopia, Addis Ababa </p>
+
           
         </div>
       </section>

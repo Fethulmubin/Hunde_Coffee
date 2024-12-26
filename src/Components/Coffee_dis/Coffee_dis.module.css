@@ -65,6 +65,10 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+.coffee_wrapper p{
+ font-size: 30px;
+ font-family: 'Courier New', Courier, monospace;
+}
 @media (max-width : 769px){
     .coffee_wrapper{
         display: grid;
@@ -75,4 +79,8 @@ a {
         width: 150px;
         height: 150px;
     }
+    .coffee_wrapper p{
+        font-size: 20px;
+        /* font-family: 'Courier New', Courier, monospace; */
+       }
 }

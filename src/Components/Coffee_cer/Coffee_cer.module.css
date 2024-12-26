@@ -24,6 +24,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cermoney_wrapper p{
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: bold; */
+}
 .boil{
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/boiling.jpeg);
     background-size: cover;
@@ -39,6 +44,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cer_heading{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 @media (max-width : 769px){
     .cermoney_wrapper{
         display: grid;
@@ -47,5 +57,12 @@
     .serve, .boil, .mort, .roasting{
         width: 150px;
         height: 150px;
+    }
+    .cermoney_wrapper p{
+        font-size: 15px;
+        
+    }
+    .cer_heading{
+        font-size: 28px;
     }
 }
